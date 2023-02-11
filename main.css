@@ -1,0 +1,96 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading{
+    text-align: center;
+    padding: 10px;
+    color: rgb(66, 45, 252);
+    padding: 10px;
+    cursor: default;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#select{
+    border: none;
+    outline: none;
+    background: rgb(211, 211, 211);
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+#select option{
+    font-weight: 600;
+}
+
+.textArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input{
+    outline: none;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn{
+    border: none;
+    background-color: rgb(66, 45, 252);
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: rgb(94, 76, 253);
+}
+
+.sortbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.list{
+    padding: 20px 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+#count{
+    color: red;
+}

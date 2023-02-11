@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body onload="onReload()">
+    <h1 class="heading">Movie Search</h1>
+    <section class="search">
+      <div class="inputs">
+        <select onchange="inputChange()" id="select">
+          <option value="title" selected>Title</option>
+          <option value="genre">Genre</option>
+          <option value="both">Title & Genre</option>
+        </select>
+        <div class="textArea">
+        <input id="titleInput" class="input" placeholder="Title" />
+        <input id="genreInput" class="input" placeholder="Genre" />
+        </div>
+      </div>
+      <button id="searchBtn" class="btn">Search</button>
+      <div class="sortbtn">
+        <button onclick="sortByTitle()" class="btn" id="sort">
+          Sort by Title
+        </button>
+        <button onclick="sortByGenre()" class="btn" id="sort">
+          Sort by Genre
+        </button>
+      </div>
+    </section>
+    <section>
+      <ol id="list" class="list"></ol>
+    </section>
+    <section>
+      <ol id="count" class="list"></ol>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
